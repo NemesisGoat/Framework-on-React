@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./components/Header/Header";
+import Graph3D from "./components/Graph3D/Graph3D"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      pageName: 'Graph3D'
+    };
+  };
+
+  setPageName(name) {
+    this.setState({pageName: name});
+  }
+
+  render() {
+    return (<div className="app">
+      <Header setPageName = {name => this.setPageName(name)}/>
+      {this.state.pageName === 'Graph3D'?<Graph3D/> : <></>}
+      </div>);
+  }
 }
 
 export default App;
