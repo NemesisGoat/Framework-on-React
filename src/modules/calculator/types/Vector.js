@@ -8,3 +8,5 @@ class Vector {
         return `(${this.values.map(el => el.toString()).join(' ')})`;
     }
 }
+
+export default Vector;

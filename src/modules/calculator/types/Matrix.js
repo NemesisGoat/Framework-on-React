@@ -13,3 +13,5 @@ class Matrix {
         ).join('\n');
     }
 }
+
+export default Matrix;

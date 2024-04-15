@@ -1,3 +1,5 @@
+import Calculator from "../Calculator";
+
 class Polynomial {
     constructor (poly = []) {
         this.poly = poly;
@@ -21,3 +23,5 @@ class Polynomial {
         return this.poly.reduce((S, elem) => calculator.add(calculator.mult(elem.value, calculator.pow(x, elem.power)), S), calculator.zero(null, x));
     }
 }
+
+export default Polynomial;

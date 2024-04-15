@@ -1,3 +1,12 @@
+import { Complex, Vector, Matrix, Member, Polynomial } from "./types";
+import {
+    ComplexCalculator,
+    VectorCalculator,
+    MatrixCalculator,
+    RealCalculator
+} from './calculators';
+import PolynomialCalculator from './PolynomialCalculator';
+
 class Calculator {
     getPolynomial(str) {
         const poly = [];
@@ -168,3 +177,5 @@ class Calculator {
         }
     }
 }
+
+export default Calculator;

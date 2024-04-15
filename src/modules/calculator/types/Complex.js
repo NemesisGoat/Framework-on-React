@@ -12,3 +12,5 @@ class Complex {
             this.re.toString();
     }
 }
+
+export default Complex;

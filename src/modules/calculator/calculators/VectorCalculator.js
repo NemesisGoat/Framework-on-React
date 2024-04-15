@@ -1,3 +1,6 @@
+import RealCalculator from "./RealCalculator";
+import { Vector } from "../types";
+
 class VectorCalculator {
     constructor(calc = new RealCalculator) {
         this.calc = calc;
@@ -52,3 +55,5 @@ class VectorCalculator {
         return new Vector(values);
     }
 }
+
+export default VectorCalculator;

@@ -8,3 +8,5 @@ class Member {
         //Дописать бы
     }
 }
+
+export default Member;

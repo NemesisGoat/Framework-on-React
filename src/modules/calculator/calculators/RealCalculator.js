@@ -31,3 +31,5 @@ class RealCalculator {
         return 0; 
     }
 }
+
+export default RealCalculator;

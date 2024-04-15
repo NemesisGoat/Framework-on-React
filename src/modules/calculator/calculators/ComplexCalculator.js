@@ -1,3 +1,6 @@
+import RealCalculator from "./RealCalculator";
+import { Complex } from "../types";
+
 class ComplexCalculator {
     constructor(calc = new RealCalculator) {
         this.calc = calc;
@@ -43,3 +46,5 @@ class ComplexCalculator {
         return new Complex;
     }
 }
+
+export default ComplexCalculator;

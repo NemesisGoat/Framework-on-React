@@ -1,3 +1,7 @@
+import { Polynomial, Member } from "./types";
+import { RealCalculator } from "./calculators";
+import Calculator from "./Calculator";
+
 class PolynomialCalculator {
     constructor(calc = new RealCalculator) {
         this.calc = calc;
@@ -72,6 +76,8 @@ class PolynomialCalculator {
     }
 
     zero() {
-        re
+        return new Polynomial;
     }
 }
+
+export default PolynomialCalculator;

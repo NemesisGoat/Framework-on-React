@@ -1,3 +1,6 @@
+import RealCalculator from "./RealCalculator";
+import { Matrix } from "../types";
+
 class MatrixCalculator {
     constructor(calc = new RealCalculator) {
         this.calc = calc;
@@ -77,3 +80,5 @@ class MatrixCalculator {
         return new Matrix(values);
     }
 }
+
+export default MatrixCalculator;
