@@ -1,3 +1,5 @@
+import Point from "./Point";
+
 class Polygon {
     constructor(points = [], color = '#ff0022') {
         this.points = points;
@@ -26,3 +28,5 @@ class Polygon {
         return `rgb(${r}, ${g}, ${b})`
     }
 }
+
+export default Polygon;

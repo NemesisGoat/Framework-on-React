@@ -44,6 +44,7 @@ class Graph {
 
 
     clear () {
+        this.contextV.clearRect(0, 0, this.canvasV.width, this.canvasV.height)
         this.context.clearRect(0, 0, this.canvas.width, this.canvas.height)
     }
 
@@ -96,6 +97,10 @@ class Graph {
         this.contextV.lineTo(this.xs(points[0].x), this.ys(points[0].y));
         this.contextV.closePath();
         this.contextV.fill();
+    }
+
+    renderFrame() {
+        this.context.drawImage(this.canvasV, 0, 0);
     }
 }
 

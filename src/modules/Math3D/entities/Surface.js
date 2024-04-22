@@ -1,3 +1,5 @@
+import Point from "./Point";
+
 class Surface {
     constructor (points = [], edges = [], polygons = [], center = new Point) {
         this.points = points;
@@ -26,3 +28,5 @@ class Surface {
         });
     }
 }
+
+export default Surface;

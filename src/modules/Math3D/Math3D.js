@@ -1,3 +1,4 @@
+//aaaaaa
 class Math3D {
     constructor({WIN}) {
         this.WIN = WIN;
@@ -264,3 +265,5 @@ class Math3D {
         );
     }
 }
+
+export default Math3D;
